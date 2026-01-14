@@ -1,0 +1,185 @@
+.news-page {
+  padding: 40px 0;
+}
+
+.news-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  flex: 1;
+}
+
+.news-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+  display: flex;
+}
+
+.news-image {
+  flex: 0 0 300px;
+}
+
+.news-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.news-content {
+  flex: 1;
+  padding: 30px;
+}
+
+.news-meta {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.news-category {
+  background: #e8f4fc;
+  color: #3498db;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.85em;
+  font-weight: 500;
+}
+
+.news-date {
+  color: #666;
+  font-size: 0.9em;
+}
+
+.news-author {
+  color: #666;
+  font-size: 0.9em;
+  font-style: italic;
+}
+
+.news-content h3 {
+  color: #2c3e50;
+  margin: 0 0 15px;
+  font-size: 1.5em;
+}
+
+.news-excerpt {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.news-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.share-btn {
+  background: none;
+  border: none;
+  color: #3498db;
+  cursor: pointer;
+  font-size: 1em;
+  padding: 5px 10px;
+}
+
+.share-btn:hover {
+  color: #2980b9;
+}
+
+.news-page .container {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 40px;
+}
+
+.news-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.sidebar-card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.sidebar-card h3 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.category-list {
+  list-style: none;
+  padding: 0;
+}
+
+.category-list li {
+  margin-bottom: 12px;
+}
+
+.category-list a {
+  color: #666;
+  text-decoration: none;
+  display: block;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: all 0.3s;
+}
+
+.category-list a:hover {
+  background: #f8f9fa;
+  color: #3498db;
+}
+
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.no-news {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+  font-size: 1.1em;
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 992px) {
+  .news-page .container {
+    grid-template-columns: 1fr;
+  }
+  
+  .news-card {
+    flex-direction: column;
+  }
+  
+  .news-image {
+    flex: 0 0 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .news-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .news-actions {
+    flex-direction: column;
+    gap: 15px;
+    align-items: stretch;
+  }
+  
+  .share-options {
+    align-self: flex-end;
+  }
+}

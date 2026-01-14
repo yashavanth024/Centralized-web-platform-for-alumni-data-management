@@ -1,0 +1,173 @@
+.events-page {
+  padding: 40px 0;
+}
+
+.events-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.filter-tabs {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.filter-tab {
+  padding: 10px 20px;
+  background: #f8f9fa;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.filter-tab.active {
+  background: #3498db;
+  color: white;
+  border-color: #3498db;
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+}
+
+.event-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+  display: grid;
+  grid-template-columns: 80px 1fr;
+}
+
+.event-header {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background: #f8f9fa;
+  border-bottom: 1px solid #eee;
+}
+
+.event-type {
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 0.8em;
+  font-weight: 500;
+}
+
+.event-type.networking { background: #cce5ff; color: #004085; }
+.event-type.workshop { background: #d4edda; color: #155724; }
+.event-type.reunion { background: #fff3cd; color: #856404; }
+.event-type.seminar { background: #d1ecf1; color: #0c5460; }
+.event-type.other { background: #f8d7da; color: #721c24; }
+
+.event-capacity {
+  color: #666;
+  font-size: 0.9em;
+}
+
+.event-date {
+  background: #3498db;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.date-day {
+  font-size: 2em;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.date-month {
+  font-size: 1.1em;
+  margin-top: 5px;
+}
+
+.event-content {
+  padding: 20px;
+}
+
+.event-content h3 {
+  margin: 0 0 15px;
+  color: #2c3e50;
+}
+
+.event-description {
+  color: #666;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.event-details {
+  margin-bottom: 20px;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.detail-icon {
+  width: 20px;
+  text-align: center;
+}
+
+.event-actions {
+  text-align: center;
+}
+
+.event-ended {
+  color: #e74c3c;
+  font-weight: 500;
+  padding: 10px;
+  display: block;
+}
+
+.no-events {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+  font-size: 1.1em;
+}
+
+@media (max-width: 768px) {
+  .events-controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .filter-tabs {
+    justify-content: center;
+  }
+  
+  .events-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .event-card {
+    grid-template-columns: 1fr;
+  }
+  
+  .event-date {
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px;
+  }
+}

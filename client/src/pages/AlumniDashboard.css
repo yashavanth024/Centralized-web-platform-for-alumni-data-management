@@ -1,0 +1,176 @@
+.alumni-dashboard {
+  padding: 30px 0;
+}
+
+.alumni-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(135deg, #2c3e50, #34495e);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.mentorships-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.mentorship-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 25px;
+  transition: all 0.3s;
+}
+
+.mentorship-card:hover {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.mentorship-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.mentorship-header h3 {
+  margin: 0;
+  color: #2c3e50;
+  flex: 1;
+}
+
+.status-badge {
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.85em;
+  font-weight: 500;
+}
+
+.status-badge.active {
+  background: #d4edda;
+  color: #155724;
+}
+
+.status-badge.inactive {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.mentorship-description {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.mentorship-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat-label {
+  display: block;
+  color: #666;
+  font-size: 0.9em;
+  margin-bottom: 5px;
+}
+
+.stat-value {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.mentorship-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.no-mentorships {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.empty-state {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.empty-icon {
+  font-size: 4em;
+  color: #3498db;
+  margin-bottom: 20px;
+}
+
+.impact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.impact-item {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+
+.impact-item:hover {
+  background: white;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.impact-icon {
+  font-size: 2em;
+  color: #3498db;
+  flex-shrink: 0;
+}
+
+.impact-content h4 {
+  margin: 0 0 10px;
+  color: #2c3e50;
+}
+
+.impact-content p {
+  color: #666;
+  margin: 0;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .mentorship-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .mentorship-stats {
+    grid-template-columns: 1fr;
+  }
+  
+  .mentorship-actions {
+    flex-direction: column;
+  }
+  
+  .impact-item {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+}

@@ -1,0 +1,182 @@
+.mentorship-page {
+  padding: 40px 0;
+}
+
+.mentorship-intro {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 30px;
+  margin-bottom: 40px;
+  align-items: start;
+}
+
+.intro-card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.intro-card h3 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.intro-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.intro-card li {
+  margin-bottom: 10px;
+  padding-left: 25px;
+  position: relative;
+}
+
+.intro-card li:before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #27ae60;
+  font-weight: bold;
+}
+
+.mentorship-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+}
+
+.mentorship-card {
+  background: white;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+}
+
+.mentor-header {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.mentor-avatar {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #3498db, #2c3e50);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.mentor-info h3 {
+  margin: 0 0 5px;
+  color: #2c3e50;
+}
+
+.mentor-title {
+  color: #666;
+  margin: 0 0 3px;
+  font-size: 0.95em;
+}
+
+.mentor-company {
+  color: #3498db;
+  margin: 0;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+.mentorship-content h4 {
+  margin: 0 0 15px;
+  color: #2c3e50;
+}
+
+.mentorship-description {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.mentorship-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.expertise-tag {
+  background: #e8f4fc;
+  color: #3498db;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.9em;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.availability {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.9em;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.status-dot.available { background: #27ae60; }
+.status-dot.limited { background: #f39c12; }
+.status-dot.unavailable { background: #e74c3c; }
+
+.mentee-count {
+  color: #666;
+  font-size: 0.9em;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.application-form {
+  margin-top: 15px;
+}
+
+.form-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.no-mentorships {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+  font-size: 1.1em;
+}
+
+@media (max-width: 768px) {
+  .mentorship-intro {
+    grid-template-columns: 1fr;
+  }
+  
+  .mentorship-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .mentorship-details {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
